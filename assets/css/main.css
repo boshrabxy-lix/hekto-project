@@ -66,6 +66,98 @@ body {
 }
 
 /* end header*/
+
+/* start product*/
+.featured-product {
+    padding: 50px 0;
+}
+
+.featured-product h2 {
+    margin-bottom: 30px;
+    color: #1A0B5B
+}
+
+.featured-product .row {
+    justify-content: flex-start;
+    gap: 15px;
+}
+.badge-sale{
+    position: absolute;
+    top: 20px;
+    left: 4px;
+}
+
+.featured-product .product {
+    flex: 1 0 300px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px #00000040;
+}
+
+.color {
+    width: 20px;
+    height: 6px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.color-1 {
+    background-color: #05E6B7;
+}
+
+.color-2 {
+    background-color: #F701A8;
+}
+
+.color-3 {
+    background-color: #00009D;
+    transition: all .6s;
+}
+
+.products-details h3 {
+    transition: all .6s;
+}
+
+.product:hover .color-3{
+    background-color: ;
+}
+.product:hover .products-details {
+    background-color: #2F1AC4;
+    border-radius: 2px;
+
+}
+.product-info span{
+    transition: all .9s;
+
+}
+.product:hover .products-details h3 {
+    color: #fff;
+}
+.product:hover .product-info span{
+   color:#fff 
+}
+.product .img {
+    background-color: #F6F7FB;
+    padding: 30px;
+}
+
+.product .img img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.products-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    transition: all .6s;
+}
+
+/* end product*/
+
 /* start newslater*/
 .newslater {
     background-image: url('./img/puplic/newslater.webp');

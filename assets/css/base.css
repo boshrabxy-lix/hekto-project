@@ -44,6 +44,7 @@ ul {
     width: calc(100% - 320px);
     margin: auto;
 }
+
 @media screen  and (1400px){
     .container{
         width: calc(100% - 200px);
@@ -82,4 +83,19 @@ ul {
 }
 .gap-3{
     gap:15px;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-primary{
+     color:var(--primary) ;
+}
+.text-secondary{
+color: #151875;
 }
