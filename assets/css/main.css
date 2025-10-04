@@ -600,6 +600,90 @@ h3 {
 
 /* end client*/
 
+
+/* start top categorise*/
+.top-categorise {
+    padding: 50px 0;
+}
+
+.top-categorise h2 {
+    text-align: center;
+    color: #151875;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.catagorise-style {
+    display: flex;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+
+.catag-cart {
+    width: 180px;
+    padding: 20px;
+    position: relative;
+    transition: all 0.3s;
+
+}
+
+.catagorise-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #fddff349;
+    padding: 15px;
+    align-items: center;
+    object-fit: contain;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.catagorise-img:hover{
+    box-shadow: 10px solid #a48eff;
+}
+
+
+.view-shop {
+    display: none;
+    position: absolute;
+    bottom: 19px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #00c853;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 12px;
+    font-size: 10px;
+    cursor: pointer;
+
+}
+.top-categorise .catagorise-img .view-shop:hover{
+    display:inline-flex;
+    background-color: #08d15f;
+}
+.catag-details {
+    padding: 4px;
+    align-items: center;
+    text-align: center;
+    padding-left: 39px;
+}
+
+.top-categorise .catag-details h3,
+span {
+    font-size: 13px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    color: #151875;
+}
+
+/* end top-categorise */
+
 /* start leatest loges*/
 .leatest-loges {
     padding: 70px 0;
@@ -624,7 +708,8 @@ h3 {
 }
 
 
-.leatest-loges .blogs-card:hover a,h3 {
+.leatest-loges .blogs-card:hover a,
+h3 {
     color: var(--primary);
 }
 
