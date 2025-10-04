@@ -49,6 +49,30 @@ body {
     padding: 8px 13px;
 }
 
+@media screen and (max-width:920px) {
+    .search {
+        display: none;
+    }
+
+    .logo {
+        display: block;
+    }
+}
+
+@media screen and (max-width:866px) {
+    .list {
+        display: none;
+    }
+
+    .bar {
+        display: block;
+    }
+
+    .logo {
+        display: block;
+    }
+}
+
 @media screen and (max-width:650px) {
 
     .list,
@@ -74,31 +98,72 @@ body {
 
 .hero-contant {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    flex: 1 0 85%;
-
+    flex: 1 0 49%;
 }
 
-.hero-contant .hero-lamp {
+.hero-lamp {
     position: relative;
     bottom: 50px;
-    width: 20%;
 }
 
 .text-contant {
-    padding: 12px 0;
+    padding: 69px 27px;
     font-size: 13px;
     margin: auto;
+    width: fit-content;
+}
+
+.hero h1 {
+    padding: 4px 0;
+}
+
+.hero p {
+    padding: 20px 0;
 }
 
 .hero-img {
-    flex: 1 0 60%;
+    flex: 1 0 16%;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 400px;
 }
 
-.hero-img img {
-    width: 25%;
+@media screen and (max-width:920px) {
+    .hero .hero-contant .hero-lamp img {
+        display: none;
+    }
+
+    .hero-img img {
+        width: 300px;
+        height: 300px;
+    }
 }
+
+
+@media screen and (max-width:768px) {
+    .hero-lamp {
+        display: none;
+    }
+
+    .hero-img img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+@media screen and (max-width:576px) {
+    .hero-lamp {
+        display: none;
+    }
+
+    .hero-img img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
 
 
 
@@ -200,11 +265,12 @@ body {
     transition: all .9s;
 }
 
-.product :hover .products-details h3 {
+.product :hover .products-details,
+h3 {
     color: #fff;
 }
 
-.product:hover .product-info span {
+.product:hover.product-info span {
     color: #fff;
     text-shadow: 10px;
 }
@@ -218,7 +284,7 @@ body {
     transition: all 1s;
 }
 
-.product .img:hover .icons .icon {
+.product .img:hover.icons.icon {
     opacity: 1;
     color: #2F1AC4;
 }
@@ -249,27 +315,6 @@ body {
     padding: 50px 0;
 }
 
-.badge-sale {
-    position: absolute;
-    top: 2039px;
-    left: 547px;
-}
-
-.leatesrproduct-items {
-    width: 60%;
-    display: flex;
-    gap: 50px;
-    padding: 50px;
-}
-
-.leatesrproduct-items .img {
-    padding: 30px;
-    background-color: #ffe6f079;
-    object-fit: contain;
-    margin-bottom: 5px;
-    ;
-}
-
 .leatest-style {
     display: flex;
     flex-wrap: wrap;
@@ -279,14 +324,80 @@ body {
     margin: auto;
     padding-top: 15px;
     font-size: 15px;
+    gap: 15px;
+}
+
+.Products {
+    width: calc((100% - 80px)/3);
+
+}
+
+.leatest-products .product .img:hover {
+    background-color: #fff;
+}
+
+.leatesrproduct-items .product .icons {
+    display: none;
+}
+
+.leatesrproduct-items .product .img:hover.icons {
+    display: block;
+}
+
+.badge-sale {
+    position: relative;
+    top: 143px;
+    left: -141px;
+    display: block;
 }
 
 .product {
     flex: 1 0 300px;
     border-radius: 4px;
-    width: calc((100% - 100px) /3);
-    justify-content: center;
     position: relative;
+    padding: 25px 57px 5px 68px;
+}
+
+.leatesrproduct-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 50px;
+}
+
+.leatesrproduct-items .img {
+    padding: 30px;
+    background-color: #ffe6f079;
+    object-fit: contain;
+    margin-bottom: 5px;
+    transition: all .5s;
+}
+
+
+
+@media screen and (1400px) {
+    .leatesrproduct-items {
+        width: calc(100% - 100px);
+
+    }
+}
+
+@media screen and (992px) {
+    .leatesrproduct-items {
+        width: calc(100% - 50px);
+    }
+}
+
+@media screen and (768px) {
+    .leatesrproduct-items {
+        width: calc(100% - 50px);
+    }
+}
+
+@media screen and (576px) {
+    .leatesrproduct-items {
+        width: 100%;
+    }
 }
 
 /*end leatest product*/
@@ -294,7 +405,6 @@ body {
 .shopex-details {
     align-items: center;
     padding: 20px 0;
-    height: 550px;
     gap: 30px;
     margin-bottom: 60px;
     width: calc((100% - 90px) /4);
@@ -365,8 +475,76 @@ body {
     }
 }
 
-/* end shopex se:#00000040;
-    font-ction */
+/* end shopex */
+/*  start trending product section */
+.trending-pruducts {
+    text-align: center;
+    padding: 50px 0;
+    ;
+}
+
+.trending-text {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1a1a6d;
+    margin-bottom: 30px;
+}
+
+.trending-style p {
+    color: ;
+}
+
+.products-grid {
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.products-grid .trending-cart .img img {
+    background-color: #ffe6f079;
+    width: 200px;
+    object-fit: scale-down;
+    margin-bottom: 15px;
+
+}
+
+.trending-cart {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 11px;
+    box-shadow: 10px 10px 25px 9px #fddff362;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.product-name {
+    font-size: 17px;
+    color: #151875;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.new-price {
+    color:#151875;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    margin-left: 6px;
+    font-size: 12px;
+
+}
+
+
+
+
+
+
+/*  end trending product section */
 /* start newslater*/
 .newslater {
     background-image: url('./../img/puplic/newslater.webp ');
@@ -389,11 +567,18 @@ body {
     background-color: #0D0E43;
 }
 
+
+@media screen and (max-width :740px) {
+    .newslater {
+        display: none;
+    }
+
+}
+
 /* end newslater */
 /* start client*/
 .clients {
     padding: 40px 0;
-
 }
 
 .clients .row {
@@ -408,10 +593,10 @@ body {
 
 .clients .img {
     width: 100px;
-    height: ;
+    height: 100px;
 }
 
-@media screen {
+@media screen and (max-width :500px) {
     .clients .logo {
         width: calc((100% - 30px) / 3);
     }
@@ -427,7 +612,6 @@ body {
 
     .footer .row {
         gap: 20px;
-
     }
 
     .footer a,
@@ -446,8 +630,7 @@ body {
     }
 
     .footer .right-side {
-        width: calc((100% - 20px) /2);
-
+        width: calc((100% - 20px) / 2);
     }
 
     .footer-item {
@@ -464,25 +647,31 @@ body {
         align-items: flex-start;
     }
 
-    @media screen and (max-width; 992px) {
+
+    @media screen and (max-width: 992px) {
 
         .footer .left-side,
         .footer .right-side {
             width: 100%;
         }
+
+        .footer-item {
+            width: 100%;
+            width: calc((100% - 50px)/2);
+        }
     }
 
-    @media screen and (max-width:576px) {
+    @media screen and (max-width: 576px) {
         .footer {
             text-align: center;
         }
 
         .footer-item {
-            width: 100px;
+            width: 100%;
         }
     }
 
-    @media screen and (max-width:330px) {
+    @media screen and (max-width: 330px) {
         .footer-item {
             width: 50px;
         }
